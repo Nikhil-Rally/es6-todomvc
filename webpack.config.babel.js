@@ -8,7 +8,8 @@ module.exports = {
   output: {
     path: path.resolve('dist'),
     filename: 'bundle.js',
-    publicPath: '/dist/'
+    publicPath: '/dist/',
+    pathinfo: isDev,
   },
   devtool: isDev ? 'eval' : 'source-map'
 };
