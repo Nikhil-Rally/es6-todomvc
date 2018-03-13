@@ -1,6 +1,12 @@
 /* global app, log */
-(function(window) {
   'use strict'
+
+  require('./view')
+  require('./helpers')
+  require('./controller')
+  require('./model')
+  require('./store')
+  require('./template')
 
   /**
    * Sets up a brand new Todo list.
@@ -25,4 +31,3 @@
   // Export to window
   window.app = window.app || {}
   window.app.onLoad = onLoad
-})(window)
