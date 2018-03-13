@@ -22,6 +22,7 @@
     }
   },
   "scripts": {
+    "dev": "webpack-dev-server --mode development",
     "build:dev": "webpack --mode development",
     "validate": "npm run lint",
     "start": "http-server --silent -c-1",
