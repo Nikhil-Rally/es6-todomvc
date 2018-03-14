@@ -11,5 +11,16 @@ module.exports = {
     publicPath: '/dist/',
     pathinfo: isDev,
   },
-  devtool: isDev ? 'eval' : 'source-map'
+  devtool: isDev ? 'eval' : 'source-map',
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
+    ]
+  }
 };
