@@ -1,3 +1,4 @@
+import 'todomvc-app-css/index.css'
 import View from './view';
 import helpers from './helpers'
 import Controller from './controller'
