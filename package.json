@@ -26,7 +26,6 @@
     }
   },
   "scripts": {
-    "prebuild": "rimraf dist",
     "build": "webpack -p",
     "dev": "webpack-dev-server --mode development",
     "prebuild:dev": "rimraf dist",
