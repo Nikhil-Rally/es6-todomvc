@@ -1,4 +1,6 @@
-import path from 'path';
+import path from 'path'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
+
 
 const nodeEnv = process.env.NODE_ENV || 'development';
 const isDev = nodeEnv === 'development';
@@ -26,5 +28,8 @@ module.exports = {
         use: [ 'style-loader', 'css-loader' ]
       }
     ]
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(['dist'])
+  ]
 };
