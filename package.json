@@ -32,7 +32,7 @@
     "prebuild:dev": "rimraf dist",
     "build:dev": "webpack --mode development",
     "validate": "npm run lint",
-    "start": "http-server --silent -c-1",
+    "start": "http-server dist --silent -c-1",
     "lint": "eslint ."
   }
 }
