@@ -1,4 +1,4 @@
-const webpackConfig = require('./webpack.config.babel');
+const webpack = require('./webpack.config.babel');
 const fileGlob = 'src/**/*.test.js'
 const preprocessors = {
   [fileGlob]: ['webpack'],
@@ -10,7 +10,7 @@ module.exports = config => {
     frameworks: ['mocha', 'chai'],
     files: [fileGlob],
     preprocessors,
-    webpack: webpackConfig,
+    webpack,
     reporters: ['progress'],
     port: 9876,
     colors: true,
