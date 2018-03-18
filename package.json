@@ -33,7 +33,6 @@
   "scripts": {
     "build": "webpack -p",
     "dev": "webpack-dev-server --mode development",
-    "prebuild:dev": "rimraf dist",
     "build:dev": "webpack --mode development",
     "validate": "npm run lint",
     "start": "http-server dist --silent -c-1",
