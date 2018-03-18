@@ -36,6 +36,8 @@
     "build:dev": "webpack --mode development",
     "validate": "npm run lint",
     "start": "http-server dist --silent -c-1",
+    "test": "karma start",
+    "test:watch": "karma start --auto-watch --no-single-run",
     "lint": "eslint ."
   }
 }
