@@ -4,10 +4,12 @@
     "@babel/core": "^7.0.0-beta.40",
     "@babel/preset-env": "^7.0.0-beta.40",
     "@babel/register": "^7.0.0-beta.40",
+    "babel-jest": "^23.0.0-alpha.0",
     "babel-loader": "^8.0.0-beta",
     "todomvc-app-css": "2.0.6"
   },
   "devDependencies": {
+    "babel-core": "^7.0.0-0",
     "chai": "^4.1.2",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.10",
@@ -16,17 +18,16 @@
     "ghooks": "1.3.2",
     "html-webpack-plugin": "^3.0.6",
     "http-server": "0.9.0",
+    "jest": "^22.4.2",
     "karma": "^2.0.0",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-mocha": "^1.3.0",
-    "karma-webpack": "^2.0.13",
-    "mocha": "^5.0.4",
     "opt-cli": "1.5.1",
     "style-loader": "^0.20.3",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.11",
     "webpack-dev-server": "^3.1.1"
+  },
+  "jest": {
+    "collectCoverage": true
   },
   "config": {
     "ghooks": {
@@ -39,7 +40,7 @@
     "build:dev": "webpack --mode development",
     "validate": "npm run lint",
     "start": "http-server dist --silent -c-1",
-    "test": "karma start",
+    "test": "jest",
     "test:watch": "karma start --auto-watch --no-single-run",
     "lint": "eslint ."
   }
