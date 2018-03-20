@@ -17,7 +17,7 @@ function log() {
 }
 
 // addEventListener wrapper:
-function $on(target, type, callback, useCapture) {
+export function $on(target, type, callback, useCapture) {
   target.addEventListener(type, callback, !!useCapture)
 }
 

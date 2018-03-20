@@ -1,6 +1,6 @@
 import 'todomvc-app-css/index.css'
 import View from './view';
-import helpers from './helpers'
+import {log} from './helpers'
 import Controller from './controller'
 import Model from './model'
 import Store from './store'
@@ -19,8 +19,8 @@ function Todo(name) {
   this.controller = new Controller(this.model, this.view)
 }
 
-module.exports.onLoad = function onLoad() {
-  var todo = new Todo('todos-vanillajs')
+export function onLoad() {
+  const todo = new Todo('todos-vanillajs')
   todo.controller.setView(document.location.hash)
-  helpers.log('view set')
+  log('view set')
 }

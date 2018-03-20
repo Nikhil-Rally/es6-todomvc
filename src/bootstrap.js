@@ -1,5 +1,5 @@
-import app from './app'
-import helpers from './helpers'
+import {onLoad} from './app'
+import {$on} from './helpers'
 
-helpers.$on(window, 'load', app.onLoad)
-helpers.$on(window, 'hashchange', app.onLoad)
+$on(window, 'load', onLoad)
+$on(window, 'hashchange', onLoad)
