@@ -1,4 +1,4 @@
-module.exports = Store
+export default Store
 
 /**
  * Creates a new client side storage object and will create an empty
@@ -34,7 +34,7 @@ function Store(name, callback) {
  *
  * @example
  * db.find({foo: 'bar', hello: 'world'}, function (data) {
-	 *	 // data will return any items that have foo: bar and
+	 *   // data will return any items that have foo: bar and
 	 *	 // hello: world in their properties
 	 * });
  */
@@ -85,7 +85,7 @@ Store.prototype.save = function (updateData, callback, id) {
   if (id) {
     for (var i = 0; i < todos.length; i++) {
       if (todos[i].id === id) {
-        for (var key in updateData) {
+        for (var key in updateData) { // eslint-disable-line guard-for-in
           if (updateData.hasOwnProperty(key)) {
             todos[i][key] = updateData[key]
           }
@@ -117,7 +117,7 @@ Store.prototype.remove = function (id, callback) {
   var todos = data.todos
 
   for (var i = 0; i < todos.length; i++) {
-    if (todos[i].id == id) { // eslint-disable-line
+    if (todos[i].id === id) { // eslint-disable-line
       todos.splice(i, 1)
       break
     }
