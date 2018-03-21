@@ -1,6 +1,6 @@
 import {qs, qsa, $on, $parent, $delegate} from './helpers'
 
-module.exports = View
+export default View
 
 /**
  * View that abstracts away the browser's DOM completely.

@@ -1,4 +1,4 @@
-module.exports = {qs, qsa, log, $on, $delegate, $parent, remove, leftPad}
+export {qs, qsa, log, $on, $delegate, $parent, remove, leftPad}
 
 // Get element(s) by CSS selector:
 function qs(selector, scope) {
@@ -17,7 +17,7 @@ function log(...args) {
 }
 
 // addEventListener wrapper:
-export function $on(target, type, callback, useCapture) {
+function $on(target, type, callback, useCapture) {
   target.addEventListener(type, callback, !!useCapture)
 }
 
