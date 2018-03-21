@@ -1,9 +1,9 @@
 {
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.0.0-beta.40",
-    "@babel/preset-env": "^7.0.0-beta.40",
-    "@babel/register": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.41",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/register": "^7.0.0-beta.42",
     "babel-jest": "^23.0.0-alpha.0",
     "babel-loader": "^8.0.0-beta",
     "todomvc-app-css": "2.0.6",
