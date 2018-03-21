@@ -35,6 +35,7 @@
       "pre-commit": "opt --in pre-commit --exec \"npm run validate\""
     }
   },
+  "sideEffects": false,
   "scripts": {
     "build": "webpack -p",
     "dev": "webpack-dev-server --mode development",
