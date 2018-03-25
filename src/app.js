@@ -5,6 +5,7 @@ import Controller from './controller'
 import Model from './model'
 import Store from './store'
 import Template from './template'
+import './app.css'
 
 /**
  * Sets up a brand new Todo list.
