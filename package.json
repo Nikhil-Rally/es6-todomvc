@@ -1,6 +1,11 @@
 {
   "private": true,
   "dependencies": {
+    "d3": "^5.0.0",
+    "lodash": "^4.17.5",
+    "rd3": "^0.8.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "todomvc-app-css": "2.0.6"
   },
   "devDependencies": {
