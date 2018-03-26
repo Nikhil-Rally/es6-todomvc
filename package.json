@@ -1,11 +1,11 @@
 {
   "private": true,
   "dependencies": {
-    "d3": "^5.0.0",
+    "d3": "3.5.17",
     "lodash": "^4.17.5",
-    "rd3": "^0.8.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "rd3": "^0.7.0",
+    "react": "15.3.0",
+    "react-dom": "15.3.0",
     "todomvc-app-css": "2.0.6"
   },
   "devDependencies": {
@@ -29,6 +29,7 @@
     "karma": "^2.0.0",
     "opt-cli": "1.5.1",
     "progress-bar-webpack-plugin": "^1.11.0",
+    "prop-types": "^15.6.1",
     "style-loader": "^0.20.3",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "^4.1.1",
