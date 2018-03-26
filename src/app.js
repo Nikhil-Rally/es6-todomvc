@@ -2,6 +2,7 @@ import 'todomvc-app-css/index.css'
 import './app.css'
 import {$on} from './helpers'
 import {updateTodo} from './todo'
+import toggleGraph from './graph'
 
 export function onLoad() {
   updateTodo()
@@ -10,7 +11,12 @@ export function onLoad() {
     toggleGraphButton,
     'click',
     () => {
-      console.log('click')
+      const active = toggleGraph()
+      if (active) {
+        toggleGraphButton.classList.add('active')
+      } else {
+        toggleGraphButton.classList.remove('active')
+      }
     },
   )
 }
