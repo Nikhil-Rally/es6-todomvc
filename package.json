@@ -30,6 +30,7 @@
     "karma": "^2.0.0",
     "opt-cli": "1.5.1",
     "progress-bar-webpack-plugin": "^1.11.0",
+    "prop-types": "^15.6.1",
     "style-loader": "^0.20.3",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "^4.1.1",
