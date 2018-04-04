@@ -37,7 +37,21 @@ module.exports = {
       template: 'index.html',
       inject: 'head'
     }),
-    new UglifyJsPlugin(),
     new ProgressBarPlugin(),
   ],
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          compress: true,
+          mangle: true,
+          keep_fnames: true,
+          output: {
+            beautify: false,
+            comments: false
+          }
+        }
+      })
+    ]
+  }
 };
